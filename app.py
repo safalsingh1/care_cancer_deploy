@@ -3,8 +3,14 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import os
+
+from dotenv import load_dotenv
+
 import google.generativeai as genai
 import requests
+
+
+load_dotenv()
 
 app = Flask(__name__)
 
